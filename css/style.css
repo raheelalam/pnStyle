@@ -136,6 +136,9 @@ p a[target="_blank"]:after{
     }
 }
 
+img {
+  max-width: 100%;
+}
 
 ol,
 ul{
