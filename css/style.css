@@ -144,26 +144,7 @@ ol,
 ul{
     margin-bottom:20px;
 }
-ol {
-  list-style-position: inside;
-}
-ol {
-  counter-reset: list;
-}
 
-ol > li {
-    display: block;
-    counter-increment: list;
-    padding-left: 25px;
-    position: relative;
-}
-
-ol > li:before {
-    content: counter(list)".";
-    position: absolute;
-    left: 0;
-    top: 0;
-}
 h1{
     line-height:normal;
 }
@@ -259,4 +240,25 @@ h2{
     left:0;
     top:11px;
     border-radius:50%;
+}
+
+.body-panel .right-panel .inner-panel-body ol {
+  list-style-position: inside;
+}
+.body-panel .right-panel .inner-panel-body ol {
+  counter-reset: list;
+}
+
+.body-panel .right-panel .inner-panel-body ol > li {
+    display: block;
+    counter-increment: list;
+    padding-left: 25px;
+    position: relative;
+}
+
+.body-panel .right-panel .inner-panel-body ol > li:before {
+    content: counter(list)".";
+    position: absolute;
+    left: 0;
+    top: 0;
 }
