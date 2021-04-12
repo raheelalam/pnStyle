@@ -15,24 +15,23 @@ b, strong{
 p{
     margin-bottom:10px;
 }
-
 /*-- link within paragraph--*/
 p a{
     font-size:inherit;
     color:#e62c35;
-    display: inline-block;
+    display:inline-block;
 }
 p a:hover{
     color:#ce1827;
 }
 /*-- if terget blank --*/
 p a[target="_blank"]:after{
-    content: "";
-    background: url(../images/external-link.svg)no-repeat center right;
-    width: 20px;
-    height: 17px;
-    display: inline-block;
-    vertical-align: sub;
+    content:"";
+    background:url(../images/external-link.svg) no-repeat center right;
+    width:20px;
+    height:17px;
+    display:inline-block;
+    vertical-align:sub;
 }
 
 /*--margins --*/
@@ -148,7 +147,26 @@ ol,
 ul{
     margin-bottom:20px;
 }
+ol {
+  list-style-position: inside;
+}
+ol {
+  counter-reset: list;
+}
 
+ol > li {
+    display: block;
+    counter-increment: list;
+    padding-left: 25px;
+    position: relative;
+}
+
+ol > li:before {
+    content: counter(list)".";
+    position: absolute;
+    left: 0;
+    top: 0;
+}
 h1{
     line-height:normal;
 }
