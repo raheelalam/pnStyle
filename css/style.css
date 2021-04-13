@@ -33,139 +33,116 @@ p a[target="_blank"]:after{
     display:inline-block;
     vertical-align:sub;
 }
-
 /*--margins --*/
 .margin-top-10{
     margin-top:10px;
 }
-
 .margin-top-20{
     margin-top:20px;
 }
-
 .margin-top-30{
     margin-top:30px;
 }
-
 .margin-top-40{
     margin-top:40px;
 }
-
 .margin-top-50{
     margin-top:50px;
 }
-
 .margin-bottom-10{
     margin-bottom:10px;
 }
-
 .margin-bottom-20{
     margin-bottom:20px;
 }
-
 .margin-bottom-30{
     margin-bottom:30px;
 }
-
 .margin-bottom-40{
     margin-bottom:40px;
 }
-
 .margin-bottom-50{
     margin-bottom:50px;
 }
-
 /*tabs*/
 
-.tab-style {
-  width: 100%;
-  position: relative;
+.tab-style{
+    width:100%;
+    position:relative;
 }
-
 .tab-style hr{
-    border-top: 1px solid #f5f7fa;
-    margin: 6px 0 0 0;
-    position: absolute;
-    width: calc(100vw - 370px);
+    border-top:1px solid #f5f7fa;
+    margin:6px 0 0 0;
+    position:absolute;
+    width:calc(100vw - 370px);
 }
-
-.tab-style > input {
-  display: none;
+.tab-style > input{
+    display:none;
 }
-
-.tab-style > label {
-  color: #3a5179;
-  font-weight: bold;
-  margin: 0 40px 10px 0;
-  position: relative;
-  cursor: pointer;
-  z-index:1;
+.tab-style > label{
+    color:#3a5179;
+    font-weight:bold;
+    margin:0 40px 10px 0;
+    position:relative;
+    cursor:pointer;
+    z-index:1;
 }
-
 .tab-style > label:after{
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 1px;
-  background: transparent;
-  bottom: -11px;
-  left: 0;
-  transition: all 0.3s ease;
+    content:"";
+    position:absolute;
+    width:100%;
+    height:1px;
+    background:transparent;
+    bottom:-11px;
+    left:0;
+    transition:all 0.3s ease;
 }
-
-.tab-style > input:checked+label:after{
-  background: #e62c35;
+.tab-style > input:checked + label:after{
+    background:#e62c35;
 }
-
-.tab-style > .tab-data {
-  display: none;
+.tab-style > .tab-data{
+    display:none;
 }
-
-.tab-style > input:nth-of-type(1):checked~.tab-data:nth-of-type(1),
-.tab-style > input:nth-of-type(2):checked~.tab-data:nth-of-type(2),
-.tab-style > input:nth-of-type(3):checked~.tab-data:nth-of-type(3),
-.tab-style > input:nth-of-type(4):checked~.tab-data:nth-of-type(4),
-.tab-style > input:nth-of-type(5):checked~.tab-data:nth-of-type(5),
-.tab-style > input:nth-of-type(6):checked~.tab-data:nth-of-type(6){
+.tab-style > input:nth-of-type(1):checked ~ .tab-data:nth-of-type(1),
+.tab-style > input:nth-of-type(2):checked ~ .tab-data:nth-of-type(2),
+.tab-style > input:nth-of-type(3):checked ~ .tab-data:nth-of-type(3),
+.tab-style > input:nth-of-type(4):checked ~ .tab-data:nth-of-type(4),
+.tab-style > input:nth-of-type(5):checked ~ .tab-data:nth-of-type(5),
+.tab-style > input:nth-of-type(6):checked ~ .tab-data:nth-of-type(6){
     display:block;
-    margin: 30px 0 0;
+    margin:30px 0 0;
     opacity:0;
     animation:opacity 0.3s forwards;
 }
-
 @keyframes opacity{
     to{
         opacity:1;
     }
 }
-
-img {
-  max-width: 100%;
+img{
+    max-width:100%;
 }
-
 ol,
 ul{
     margin-bottom:20px;
 }
-ol {
-  list-style-position: inside;
+ol{
+    list-style-position:inside;
 }
-ol {
-  counter-reset: list;
+ol{
+    counter-reset:list;
 }
-
-ol > li {
-    display: block;
-    counter-increment: list;
-    padding-left: 25px;
-    position: relative;
+ol > li{
+    display:block;
+    counter-increment:list;
+    padding-left:25px;
+    position:relative;
 }
-
-ol > li:before {
-    content: counter(list)".";
-    position: absolute;
-    left: 0;
-    top: 0;
+ol > li:before{
+    content:counter(list) ".";
+    position:absolute;
+    left:0;
+    top:0;
 }
 h1{
     line-height:normal;
@@ -207,6 +184,7 @@ h2{
 .body-panel .left-panel ul li{
     margin-bottom:20px;
 }
+.body-panel .left-panel ul li .left-menu-item,
 .body-panel .left-panel ul li a{
     font-size:16px;
     font-weight:bold;
@@ -214,6 +192,17 @@ h2{
     text-decoration:none solid rgb(58, 81, 121);
     letter-spacing:-0.1px;
 }
+.body-panel .left-panel ul li .left-menu-item{
+    margin-bottom:15px;
+    display:block;
+}
+.body-panel .left-panel ul li ul li{
+    padding-left:20px;
+}
+.body-panel .left-panel ul li ul li a{
+    font-weight:normal;
+}
+
 .body-panel .left-panel{
     width:272px;
     background:#ffffff;
@@ -221,7 +210,7 @@ h2{
 }
 .body-panel .right-panel{
     width:calc(100% - 272px);
-    border-left:#f5f7fa;
+    border-left:1px solid #f5f7fa;
 }
 .body-panel .right-panel .inner-panel-head{
     background:#f5f7fa;
@@ -236,7 +225,6 @@ h2{
     letter-spacing:-0.36px;
     margin-bottom:21px;
 }
-
 .body-panel .right-panel .subtitle-head{
     font-size:16px;
     color:#3a5179;
@@ -244,10 +232,13 @@ h2{
     line-height:27px;
     letter-spacing:-0.1px;
 }
-
 .body-panel .right-panel .inner-panel-body{
     padding:40px;
     padding-right:calc(100% - 846px);
+}
+.body-panel .right-panel .inner-panel-body ul li ul{
+    padding-left:20px;
+
 }
 
 .body-panel .right-panel .inner-panel-body ul li{
@@ -255,12 +246,10 @@ h2{
     list-style:none;
     position:relative;
 }
-
 .body-panel .right-panel .inner-panel-body ul.bug-list li{
     padding-bottom:10px;
     padding-left:26px;
 }
-
 .body-panel .right-panel .inner-panel-body ul li:before{
     content:'';
     height:4px;
@@ -272,39 +261,35 @@ h2{
     top:11px;
     border-radius:50%;
 }
-
-.body-panel .right-panel .inner-panel-body ul.bug-list li:before {
-  width: 16px;
-  height: 16px;
-  top: 4px;
-  left: 0;
-  background: #f44336;
-  content: "X";
-  color: #fff;
-  font-family: cursive;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 10px;
+.body-panel .right-panel .inner-panel-body ul.bug-list li:before{
+    width:16px;
+    height:16px;
+    top:4px;
+    left:0;
+    background:#f44336;
+    content:"X";
+    color:#fff;
+    font-family:cursive;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:10px;
 }
-
-.body-panel .right-panel .inner-panel-body ol {
-  list-style-position: inside;
+.body-panel .right-panel .inner-panel-body ol{
+    list-style-position:inside;
 }
-.body-panel .right-panel .inner-panel-body ol {
-  counter-reset: list;
+.body-panel .right-panel .inner-panel-body ol{
+    counter-reset:list;
 }
-
-.body-panel .right-panel .inner-panel-body ol > li {
-    display: block;
-    counter-increment: list;
-    padding-left: 26px;
-    position: relative;
+.body-panel .right-panel .inner-panel-body ol > li{
+    display:block;
+    counter-increment:list;
+    padding-left:26px;
+    position:relative;
 }
-
-.body-panel .right-panel .inner-panel-body ol > li:before {
-    content: counter(list)".";
-    position: absolute;
-    left: 0;
-    top: 0;
+.body-panel .right-panel .inner-panel-body ol > li:before{
+    content:counter(list) ".";
+    position:absolute;
+    left:0;
+    top:0;
 }

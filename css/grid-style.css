@@ -1,10 +1,13 @@
+.shadow{
+    filter: drop-shadow(0px 0px 1px rgba(0,0,0,0.2));
+}
 .grid-style{
     display:flex;
     flex-flow:column;
 }
 .grid-style .pn-rows{
     display:flex;
-    justify-content:space-around;
+    justify-content: space-between;
 }
 .grid-style .pn-rows .col{
     flex-grow:1;
@@ -41,4 +44,3 @@
     line-height:24px;
     letter-spacing:-0.1px;
 }
-
