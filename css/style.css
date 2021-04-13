@@ -217,6 +217,10 @@ h2{
     padding: 40px 40px 34px 40px;
     padding-right:calc(100% - 720px);
 }
+.body-panel .right-panel .inner-panel-head.full-width{
+    padding-right:calc(100% - (818px + 40px));
+}
+
 .body-panel .right-panel h1{
     font-size:36px;
     color:#3a5179;
