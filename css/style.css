@@ -198,11 +198,11 @@ h2{
 }
 .body-panel .left-panel ul li ul li{
     padding-left:20px;
+    margin-bottom: 10px;
 }
 .body-panel .left-panel ul li ul li a{
     font-weight:normal;
 }
-
 .body-panel .left-panel{
     width:272px;
     background:#ffffff;
@@ -214,13 +214,12 @@ h2{
 }
 .body-panel .right-panel .inner-panel-head{
     background:#f5f7fa;
-    padding: 40px 40px 34px 40px;
+    padding:40px 40px 34px 40px;
     padding-right:calc(100% - 720px);
 }
 .body-panel .right-panel .inner-panel-head.full-width{
     padding-right:calc(100% - (818px + 40px));
 }
-
 .body-panel .right-panel h1{
     font-size:36px;
     color:#3a5179;
@@ -235,7 +234,7 @@ h2{
     text-decoration:none solid rgb(58, 81, 121);
     line-height:27px;
     letter-spacing:-0.1px;
-    min-height: 95px;
+    min-height:95px;
 }
 .body-panel .right-panel .inner-panel-body{
     padding:40px;
@@ -245,7 +244,6 @@ h2{
     padding-left:20px;
 
 }
-
 .body-panel .right-panel .inner-panel-body ul li{
     padding-left:20px;
     list-style:none;
