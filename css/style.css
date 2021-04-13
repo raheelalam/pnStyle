@@ -390,9 +390,8 @@ h3{
     width:86px;
 }
 
-a[href="modules-closing-cta.html"],
 a[href="modules-related-articles.html"],
 a[href="modules-4-column.html"]{
     color:red !important;
-    pointer-events: none;
+    /*pointer-events: none;*/
 }
