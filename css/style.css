@@ -157,11 +157,11 @@ h2{
     font-weight:600;
 }
 h3{
-    font-size: 16px;
-    color: #3a5179;
-    text-decoration: none solid rgb(58, 81, 121);
-    line-height: 32px;
-    letter-spacing: -0.1px;
+    font-size:16px;
+    color:#3a5179;
+    text-decoration:none solid rgb(58, 81, 121);
+    line-height:32px;
+    letter-spacing:-0.1px;
     margin-bottom:10px;
     font-weight:600;
 }
@@ -190,8 +190,30 @@ h3{
 .body-panel .left-panel ul{
     list-style:none;
 }
-.body-panel .left-panel ul li{
-    margin-bottom:20px;
+.body-panel .left-panel ul li a{
+    margin-bottom:0;
+    display:block;
+    padding:10px 10px 10px 30px;
+    position:relative;
+}
+/*.body-panel .left-panel ul li span:hover,*/
+.body-panel .left-panel ul li a:hover{
+    background:rgba(218, 223, 232, 0.2)
+}
+.body-panel .left-panel ul li a.active{
+    background:rgba(218, 223, 232, 0.4)
+}
+.body-panel .left-panel ul li a.active:before{
+    width:5px;
+    background:#e62c35;
+    content:"";
+    display:inline-block;
+    position:absolute;
+    left:0;
+    top:0;
+    height:100%;
+}
+.body-panel .left-panel ul li a.active:before{
 }
 .body-panel .left-panel ul li .left-menu-item,
 .body-panel .left-panel ul li a{
@@ -204,18 +226,22 @@ h3{
 .body-panel .left-panel ul li .left-menu-item{
     margin-bottom:15px;
     display:block;
+    margin-bottom:0;
+    display:block;
+    padding:10px 10px 10px 30px;
 }
 .body-panel .left-panel ul li ul li{
-    padding-left:20px;
-    margin-bottom:10px;
+    padding-left:0;
+    margin-bottom:0;
 }
 .body-panel .left-panel ul li ul li a{
     font-weight:normal;
+    padding:5px 5px 5px 50px;
 }
 .body-panel .left-panel{
     width:272px;
     background:#ffffff;
-    padding:40px 10px 20px 30px;
+    padding:40px 0 0;
 }
 .body-panel .right-panel{
     width:calc(100% - 272px);
@@ -305,7 +331,6 @@ h3{
     left:0;
     top:0;
 }
-
 .right-image{
     display:flex;
     justify-content:space-between;
