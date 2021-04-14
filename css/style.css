@@ -73,6 +73,10 @@ p a[target="_blank"]:after{
 .grid-style .body .pn-rows{
     margin-bottom:20px;
 }
+
+.grid-style .body .pn-rows .col ul{
+    margin-bottom:10px;
+}
 .grid-style .body .pn-rows .col{
     font-size:14px;
     color:#3a5179;
