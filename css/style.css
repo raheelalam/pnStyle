@@ -109,7 +109,7 @@ p a[target="_blank"]:after{
         position:sticky;
         top:70px;
         background:#fff;
-        z-index: 1;
+        z-index:1;
     }
 }
 /*--grid--*/
@@ -256,7 +256,7 @@ h3{
     align-items:center;
     position:sticky;
     top:0;
-    z-index: 9;
+    z-index:9;
 }
 .top-panel .logo-panel{
     padding:5px 30px;
@@ -389,7 +389,7 @@ h3{
     order:1;
 }
 .body-panel .right-panel{
-    width:calc(100% - 273px);
+    width:calc(100% - 274px);
     border-left:1px solid #f5f7fa;
     order:2;
 }
@@ -501,9 +501,30 @@ h3{
 .right-image .image{
     width:86px;
 }
+@media (max-width:1199px){
+    .right-image ol{
+        width:calc(100% - 146px);
+    }
+}
+@media (max-width:767px){
+    .right-image{
+        flex-flow:column;
+    }
+    .right-image ol{
+        width:100%;
+    }
+    .right-image .image{
+        margin:30px auto 0;
+    }
+}
 .body-panel .close-btn,
 .body-panel .open-btn{
     display:none
+}
+@media (max-width:1199px){
+    .body-panel .right-panel .inner-panel-body, .body-panel .right-panel .inner-panel-head{
+        padding-right:20px;
+    }
 }
 @media (max-width:991px){
     .top-panel .nav-panel ul{
@@ -535,10 +556,9 @@ h3{
         background:#b5b5b5;
         height:40px;
         outline:none;
-        width: 100%;
-        border: 0;
+        width:100%;
+        border:0;
     }
-
     .body-panel .open-btn{
         position:absolute;
         width:100%;
@@ -563,7 +583,7 @@ h3{
         position:fixed;
         left:0;
         z-index:999;
-        width: 100%;
+        width:100%;
         height:100%;
         visibility:visible;
     }
@@ -573,8 +593,23 @@ h3{
     .body-panel .right-panel .inner-panel-head{
         padding-top:50px;
     }
+    .top-panel .logo-panel{
+        padding-right:0;
+        font-size:17px;
+        width:calc(100% - 150px);
+        padding-left:15px;
+    }
+    .top-panel .nav-panel ul {
+        width: 320px;
+    }
 }
 @media (max-width:600px){
+    .top-panel .logo-panel img{
+        width:100px;
+    }
+    .top-panel .logo-panel{
+        font-size:13px;
+    }
     .body-panel .left-panel > ul{
         padding-top:10px;
     }
@@ -586,15 +621,6 @@ h3{
         overflow:auto;
         padding-left:0px;
         margin-left:15px;
-    }
-    .top-panel .logo-panel{
-        padding-right:0;
-        font-size:13px;
-        width:calc(100% - 150px);
-        padding-left:15px;
-    }
-    .top-panel .logo-panel img{
-        width:100px;
     }
     .top-panel .nav-panel li a.active{
         border-top:1px solid rgb(230, 44, 53);
@@ -608,5 +634,10 @@ h3{
     }
     .top-panel .nav-panel ul{
         width:240px;
+    }
+}
+@media (max-width:340px){
+    .top-panel .logo-panel img{
+        width:80px;
     }
 }
