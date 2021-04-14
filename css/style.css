@@ -8,6 +8,7 @@
     text-decoration:none solid rgb(58, 81, 121);
     line-height:24px;
     letter-spacing:-0.1px;
+    box-sizing: border-box;
 }
 b, strong{
     font-weight:bold;
@@ -96,6 +97,12 @@ p a[target="_blank"]:after{
         flex-flow:wrap;
         justify-content:flex-start;
         width:100%;
+    }
+    .grid-style.grid-col-3 .pn-rows .col.col-2{
+        padding-right:5px;
+    }
+    .grid-style.grid-col-3 .pn-rows .col.col-3{
+        padding-left:5px;
     }
     .grid-style.grid-col-3 .pn-rows .col.col-2,
     .grid-style.grid-col-3 .pn-rows .col.col-3{
@@ -280,7 +287,7 @@ h3{
     height:5px;
     width:40px;
     position:absolute;
-    top:-26px;
+    top:-20px;
     left:0;
     right:0;
     margin:0 auto;
@@ -313,8 +320,8 @@ h3{
 .body-panel .left-panel > ul{
     list-style:none;
     position:sticky;
-    top:74px;
-    max-height:calc(100vh - 114px);
+    top: 64px;
+    max-height: calc(100vh - 64px);
     overflow:auto;
     padding-top:40px;
 }
@@ -389,7 +396,7 @@ h3{
     order:1;
 }
 .body-panel .right-panel{
-    width:calc(100% - 274px);
+    width:calc(100% - 272px);
     border-left:1px solid #f5f7fa;
     order:2;
 }
@@ -562,7 +569,7 @@ h3{
     .body-panel .open-btn{
         position:absolute;
         width:100%;
-        top:74px;
+        top:64px;
         left:0;
         background:none;
         border:0;
@@ -636,8 +643,8 @@ h3{
         width:240px;
     }
 }
-@media (max-width:340px){
+@media (max-width:345px){
     .top-panel .logo-panel img{
-        width:80px;
+        width:75px;
     }
 }
