@@ -306,12 +306,13 @@ h3{
     justify-content:space-between;
     min-height:100vh;
 }
-.body-panel .left-panel ul{
+.body-panel .left-panel > ul{
     list-style:none;
     position:sticky;
-    top:114px;
+    top: 74px;
     max-height:calc(100vh - 114px);
     overflow:auto;
+    padding-top:40px;
 }
 .body-panel .left-panel > ul::-webkit-scrollbar-thumb{
     background-color:rgba(0, 0, 0, 0);
@@ -379,7 +380,7 @@ h3{
 .body-panel .left-panel{
     width:272px;
     background:#ffffff;
-    padding:40px 0 0;
+    padding: 0px 0 0;
     position:relative;
 }
 .body-panel .right-panel{
@@ -502,10 +503,10 @@ h3{
         width:370px;
     }
     .body-panel .left-panel{
-        width:190px;
+        width: 200px;
     }
     .body-panel .right-panel{
-        width:calc(100% - 190px);
+        width: calc(100% - 200px);
     }
     .body-panel .right-panel .inner-panel-body,
     .body-panel .right-panel .inner-panel-head {
