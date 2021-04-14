@@ -16,6 +16,9 @@ b, strong{
 body.fixed{
     overflow:hidden;
 }
+a{
+    text-decoration:none;
+}
 p{
     margin-bottom:10px;
 }
@@ -24,6 +27,7 @@ p a{
     font-size:inherit;
     color:#e62c35;
     display:inline-block;
+
 }
 p a:hover{
     color:#ce1827;
@@ -608,6 +612,9 @@ h3{
     }
     .top-panel .nav-panel ul {
         width: 320px;
+    }
+    .body-panel .left-panel > ul{
+        max-height:calc(100vh - 94px);
     }
 }
 @media (max-width:600px){
